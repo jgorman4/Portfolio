@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title> Joseph Gorman Portfolio </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Your Website Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <main>
+
+    <div class="container">
+        <div class="left-container">
+                <!-- Content for the left container goes here -->
+            <img src = D:/Personal/ProfPic.jpg class = "image-border">
+            <h2>Joseph Gorman</h2>
+            
+            <div class="social-menu">
+                <div class="menu-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="expanded-icons">
+                    <a href= "https://www.linkedin.com/in/joe-gorman-4b87b4236/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href= "https://github.com/jgorman4/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item" onclick="openBox('education_box')">Education</li>
+                <li class="nav-item" onclick="openBox('experience_box')">Experience</li>
+                <li class="nav-item" onclick="openBox('portfolio_box')">Portfolio</li>
             </ul>
-        </nav>
-    </header>
+            <p2> Hello there! I am <span class = "intel-Text">Geospatial Specialist </span> with the Texas A&M Forest Service. I have developed a passion
+                for solving complex natural resource issues with various geospatial plaforms and tools, especially as it pertains to wildlife conservation.
+                This passion grew from my combined experience as an <span class = "intel-Text"> Imagery Intelligence Anaylst</span> 
+                for the Army National Guard, a <span class = "intel-Text">Rangeland Conservationist</span> for the USDA-NRCS, and from undergraduate and graduate degrees.
+                 To further my interest in GIS, I pursued a second Master of Science
+                in Geographic Information Science.
+            </p2>
 
-    <section id="home">
-        <h2>Welcome to Your Website</h2>
-        <p>This is a simple and clean website template. Customize it to showcase your content.</p>
-    </section>
+            <p3> As the world of GIS technology rapidly evolves, I love to learn new skill sets that help us solve our world's most pressing issues.
+                I am always looking for opportunities to improve my <span class = "skill-Text"> programming knowledge </span> with Python, JavaScript, HTML/CSS, and SQL, 
+                <span class = "skill-Text">imagery analysis </span> with Google Earth Engine, and <span class = "skill-Text"> deep learning </span> with AI and Machine Learning.    
+            </p3>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief description about yourself here.</p>
-    </section>
+         </div>
+            
+        <div class="right-container">
+                <!-- Content for the right container goes here -->
+            <h2>Right Container</h2>
+            <p>This is your container on the right side of the page (2/3 of the page).</p>
+            <div class="box" id="education_box">Content for Education</div>
+            <div class="box" id="experience_box">Content for Experience</div>
+            <div class="box" id="portfolio_box">Content for Portfolio</div>
+         </div>
+     </div>
+     
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Add your projects or portfolio items here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <!-- Add a contact form or your contact information here -->
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
-    </footer>
+    </div>
+    </main>
+    <script src="button.js"></script>
 </body>
 </html>
