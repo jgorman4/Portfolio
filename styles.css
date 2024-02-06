@@ -246,6 +246,7 @@ main {
     text-align: center;
     margin-bottom: 50px;
     font-size: 2em;
+    text-decoration: underline;
 }
 
 #AngeloState {
@@ -347,3 +348,91 @@ main {
 }
 
 
+#experience_box h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+
+#TFS {
+    display: flex;
+    flex-direction: flex;
+    margin-left: 30px;
+    flex-direction: column;
+}
+
+#TFS h1 {
+    font-size: 1.2em;
+}
+
+#TFS p1{
+    margin-bottom: 5px;
+}
+#TFS p2 {
+    margin-bottom: 10px;
+}
+
+#TFS ul {
+    margin-left: 50px;
+    list-style-type: disc;
+}
+
+#TFS li {
+    margin-bottom: 5px; /* Adjust spacing between list items */
+}
+
+#NRCS {
+    display: flex;
+    flex-direction: flex;
+    margin-left: 30px;
+    flex-direction: column;
+}
+
+#NRCS h1 {
+    font-size: 1.2em;
+}
+
+#NRCS p1{
+    margin-bottom: 5px;
+}
+#NRCS p2 {
+    margin-bottom: 10px;
+}
+
+#NRCS ul {
+    margin-left: 50px;
+    list-style-type: disc;
+}
+
+#NRCS li {
+    margin-bottom: 5px; /* Adjust spacing between list items */
+}
+
+#Army {
+    display: flex;
+    flex-direction: flex;
+    margin-left: 30px;
+    flex-direction: column;
+}
+
+#Army h1 {
+    font-size: 1.2em;
+}
+
+#Army p1{
+    margin-bottom: 5px;
+}
+#Army p2 {
+    margin-bottom: 10px;
+}
+
+#Army ul {
+    margin-left: 50px;
+    list-style-type: disc;
+}
+
+#Army li {
+    margin-bottom: 5px; /* Adjust spacing between list items */
+}
