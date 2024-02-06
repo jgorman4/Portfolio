@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Joseph Gorman Portfolio </title>
@@ -34,9 +35,9 @@
             </div>
             
             <ul class="nav-menu">
-                <li class="nav-item" onclick="openBox('education_box')">Education</li>
-                <li class="nav-item" onclick="openBox('experience_box')">Experience</li>
-                <li class="nav-item" onclick="openBox('portfolio_box')">Portfolio</li>
+                <li class="nav-item" onclick="openBox('education_box', this)">Education</li>
+                <li class="nav-item" onclick="openBox('experience_box', this)">Experience</li>
+                <li class="nav-item" onclick="openBox('portfolio_box', this)">Portfolio</li>
             </ul>
             <p2> Hello there! I am <span class = "intel-Text">Geospatial Specialist </span> with the Texas A&M Forest Service. I have developed a passion
                 for solving complex natural resource issues with various geospatial plaforms and tools, especially as it pertains to wildlife conservation.
@@ -48,19 +49,55 @@
 
             <p3> As the world of GIS technology rapidly evolves, I love to learn new skill sets that help us solve our world's most pressing issues.
                 I am always looking for opportunities to improve my <span class = "skill-Text"> programming knowledge </span> with Python, JavaScript, HTML/CSS, and SQL, 
-                <span class = "skill-Text">imagery analysis </span> with Google Earth Engine, and <span class = "skill-Text"> deep learning </span> with AI and Machine Learning.    
+                <span class = "skill-Text">imagery analysis </span> with Google Earth Engine, and <span class = "skill-Text"> statistical analysis </span> with AI and Machine Learning.    
             </p3>
 
          </div>
             
-        <div class="right-container">
-                <!-- Content for the right container goes here -->
-            <h2>Right Container</h2>
-            <p>This is your container on the right side of the page (2/3 of the page).</p>
-            <div class="box" id="education_box">Content for Education</div>
-            <div class="box" id="experience_box">Content for Experience</div>
-            <div class="box" id="portfolio_box">Content for Portfolio</div>
-         </div>
+         <div class="right-container">
+            <!-- ... existing content ... -->
+            <div class="box" id="education_box">
+                <h3 class = "wipe-in"> Education</h3>
+
+                <div class = "wipe-in" id = "AngeloState">
+                    <img src= "D:/Personal/CodingProjects/asulogo.png" class = "wipe-in">
+                    <p class = "wipe-in">Angelo State University</p>
+                        <div class = "wipe-in" id = "AngeloStateTxt">
+                            <p2 class = "wipe-in"> Bachelor of Science in Natural Resource Management</p2>
+                            <p4 class = "wipe-in"> Jan 2016 - May 2020</p4>
+                            <p3 class = "wipe-in"> Magna Cum Laude</p3>
+                            <p5 class = "wipe-in"> Outstanding Undergrad in Range Management</p5>
+                        </div>
+                </div>
+
+                <div class = "wipe-in" id = "ClemsonUni">
+                    <img src= "D:/Personal/CodingProjects/ClemsonPaw_RGB__Orange.png" class = "wipe-in">
+                    <p class = "wipe-in">Clemson University</p>
+                    <div class = "wipe-in" id = "ClemsonUniTxt">
+                        <p2 class = "wipe-in"> Master of Wildlife and Fisheries Resources</p2>
+                        <p4 class = "wipe-in"> August 2020 - May 2023</p4>
+                    </div>
+                </div>
+
+                <div class = "wipe-in" id = "NWMSU">
+                    <img src= "D:/Personal/CodingProjects/nwmsu.png" class = "wipe-in">
+                    <p class = "wipe-in">Northwest Missouri State University</p>
+                    <div class = "wipe-in" id = "nwmsuTxt">
+                        <p5 class = "wipe-in"> Master of Science <span class = "wrap-trigger"></span> in Geographic Information Science</p5>
+                        <p6 class = "wipe-in"> May 2021 - December 2023</p6>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="box" id="experience_box">
+                i223
+            </div>
+            <div class="box" id="portfolio_box">
+                25274
+            </div>
+        </div>
+        
      </div>
      
 
