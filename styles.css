@@ -97,11 +97,14 @@ main {
    max-width: 60%;
    height: auto;
 }
+
 .image-border{
-    border: 2px solid white;
+    border: 0.2vw solid white;
+    max-width: 100%;
+    height: auto;
 }
 .left-container h2 {
-    margin-top: 10;
+    padding-top: 0.5%;
     font-size: 2vw;
     display: flex;
 
@@ -153,7 +156,7 @@ main {
     position: absolute;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5%;
     z-index: 1;
     opacity: 0;
     left: 20px
@@ -190,7 +193,7 @@ main {
 
 .nav-item {
     cursor: pointer;
-    margin-right: 20px;
+    padding-right: 10%;
     font-size: 1vw;
     position: relative; /* Add relative positioning for pseudo-element */
 }
@@ -200,7 +203,7 @@ main {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 1%;
     background-color: #fff; /* Set the underline color */
     bottom: 0;
     left: 0;
@@ -210,14 +213,14 @@ main {
 .nav-item.selected::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 2px;
+    width: 80%;
+    height: 1%;
     background-color: #fff;
     bottom: 0;
     left: 0;
 }
 .nav-item:hover::before {
-    width: 100%; /* Expand the width on hover */
+    width: 79%; /* Expand the width on hover */
 }
 
 
@@ -245,7 +248,7 @@ main {
     backdrop-filter: blur(3px);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
 }
-
+/*------------------------------Education ---------------------------------------------*/
 /* For WebKit browsers (Chrome, Safari) */
 #education_box::-webkit-scrollbar {
     width: 10px; /* Set the width of the scrollbar */
@@ -358,7 +361,7 @@ main {
     width: 10px; /* Set the width of the scrollbar */
 }
 
-
+/*------------------------------Experience---------------------------------------------*/
 #experience_box {
     scrollbar-width: none;
     overflow: auto;
@@ -369,7 +372,6 @@ main {
 
 #experience_box h4 {
     text-align: center;
-    margin-bottom: 50px;
     font-size: 2vw;
     text-decoration: underline;
 }
@@ -378,7 +380,7 @@ main {
 #TFS {
     display: flex;
     flex-direction: flex;
-    margin-left: 30px;
+    padding-left: 2%;
     flex-direction: column;
 }
 
@@ -387,25 +389,29 @@ main {
 }
 
 #TFS p1{
-    margin-bottom: 5px;
+    font-size: 0.8vw;
+    padding-bottom: 1%;
 }
 #TFS p2 {
-    margin-bottom: 10px;
+    font-size: 0.8vw;
+    padding-bottom: 0.5%;
 }
 
 #TFS ul {
-    margin-left: 50px;
+    font-size: 0.8vw;
+    padding-left: 5%;
     list-style-type: disc;
 }
 
 #TFS li {
-    margin-bottom: 5px; /* Adjust spacing between list items */
+    font-size: 0.8vw;
+    padding-bottom: 1%; /* Adjust spacing between list items */
 }
 
 #NRCS {
     display: flex;
     flex-direction: flex;
-    margin-left: 30px;
+    padding-left: 2%;
     flex-direction: column;
 }
 
@@ -413,45 +419,56 @@ main {
     font-size: 1.2vw;
 }
 
-#NRCS p1{
-    margin-bottom: 5px;
+#NRCS p1 {
+    font-size: 0.8vw;
+    padding-bottom: 1%;
 }
+
 #NRCS p2 {
-    margin-bottom: 10px;
+    font-size: 0.8vw;
+    padding-bottom: 0.5%;
 }
 
 #NRCS ul {
-    margin-left: 50px;
+    font-size: 0.8vw;
+    padding-left: 5%;
     list-style-type: disc;
 }
 
 #NRCS li {
-    margin-bottom: 5px; /* Adjust spacing between list items */
+    font-size: 0.8vw;
+    padding-bottom: 1%; /* Adjust spacing between list items */
 }
 
 #Army {
     display: flex;
     flex-direction: flex;
-    margin-left: 30px;
+    padding-left: 2%;
     flex-direction: column;
+    padding-bottom: 1%;
 }
 
 #Army h1 {
     font-size: 1.2vw;
 }
 
-#Army p1{
-    margin-bottom: 5px;
+#Army p1 {
+    font-size: 0.8vw;
+    padding-bottom: 1%;
 }
+
 #Army p2 {
-    margin-bottom: 10px;
+    font-size: 0.8vw;
+    padding-bottom: 0.5%;
 }
 
 #Army ul {
-    margin-left: 50px;
+    font-size: 0.8vw;
+    padding-left: 5%;
     list-style-type: disc;
 }
 
 #Army li {
-    margin-bottom: 5px; /* Adjust spacing between list items */
+    font-size: 0.8vw;
+    padding-bottom: 1%; /* Adjust spacing between list items */
 }
