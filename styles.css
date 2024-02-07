@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'PlayFair Display', serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -91,6 +91,8 @@ main {
     overflow: auto;
     backdrop-filter: blur(3px);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+
+  
 }
 
 .left-container img {
@@ -127,7 +129,8 @@ main {
     position: relative;
     font-size: 1vw;
     scrollbar-width: thin;
-    flex: 2 2 8rem;   
+    flex: 2 2 8rem;
+       
 }
 
 @media only screen and (max-width: 720px) {
@@ -247,6 +250,10 @@ main {
     box-sizing: content-box;
     backdrop-filter: blur(3px);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+
+    flex: 1; /* Use flex to allow the container to grow and shrink */
+    max-width: 40%; /* Set a maximum width for the right container */
+    overflow: auto; /* Add this line to enable horizontal scrolling if needed */
 }
 /*------------------------------Education ---------------------------------------------*/
 /* For WebKit browsers (Chrome, Safari) */
@@ -287,7 +294,7 @@ main {
 }
  #AngeloState p {
     flex-direction: flex;
-    padding-left: 17%;
+    padding-left: 12%;
     font-size: 1.4vw;
     font-style: italic;
  }
@@ -478,6 +485,7 @@ main {
 #portfolio_box h1 {
     text-decoration: underline;
 }
+
 #portfolio_box {
     flex-direction: column;
     text-align: center;
@@ -486,24 +494,39 @@ main {
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+    padding-top: 2%;
+    max-width: 100%; /* Adjust the max-width based on your design */
+    box-sizing: border-box;
 }
 
 .portfolio-item {
     flex: 0 1 calc(30% - 1%);
     box-sizing: border-box;
     text-align: center;
-    padding-top: 5%;
+    max-width: 100%; /* Ensure the items don't exceed the container width */
+    margin: 1%; /* Adjust margin as needed */
 }
 
 .portfolio-item img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     border: 0.2vw solid white;
+}
+ .bold {
+    font-weight: bold;
+    text-decoration: underline;
+ }
+
+ .portfolio-item a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the default underline */
+}
+
+.portfolio-item a:hover {
+    font-style: italic; /* Add underline on hover if needed */
 }
 
 
