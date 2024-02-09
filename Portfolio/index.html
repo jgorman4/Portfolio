@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Joseph Gorman Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main>
+
+    <div class="container">
+        <div class="left-container">
+                <!-- Content for the left container goes here -->
+            <img src = "ProfilePicture.jpg" class = "image-border">
+            <h2>Joseph Gorman</h2>
+            
+            <div class="social-menu">
+                <div class="menu-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="expanded-icons">
+                    <a href= "https://www.linkedin.com/in/joe-gorman-4b87b4236/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href= "https://github.com/jgorman4/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item" onclick="openBox('education_box', this)">Education</li>
+                <li class="nav-item" onclick="openBox('experience_box', this)">Experience</li>
+                <li class="nav-item" onclick="openBox('portfolio_box', this)">Portfolio</li>
+            </ul>
+            <p> Hello there! I am <span class = "intel-Text">Geospatial Specialist </span> with the Texas A&M Forest Service. I have developed a passion
+                for solving complex natural resource issues with various geospatial plaforms and tools, especially as it pertains to wildlife conservation.
+                This passion grew from my combined experience as an <span class = "intel-Text"> Imagery Intelligence Anaylst</span> 
+                for the Army National Guard, a <span class = "intel-Text">Rangeland Conservationist</span> for the USDA-NRCS, and from undergraduate and graduate degrees.
+                 To further my interest in GIS, I pursued a second Master of Science
+                in Geographic Information Science.
+            </p>
+
+            <p> As the world of GIS technology rapidly evolves, I love to learn new skill sets that help us solve our world's most pressing issues.
+                I am always looking for opportunities to improve my <span class = "skill-Text"> programming knowledge </span> with Python, JavaScript, HTML/CSS, and SQL, 
+                <span class = "skill-Text">imagery analysis </span> with Google Earth Engine, and <span class = "skill-Text"> statistical analysis </span> with AI and Machine Learning.    
+            </p>
+
+         </div>
+            
+         <div class="right-container">
+            <!-- ... existing content ... -->
+            <div class="box" id="education_box">
+                <h3 class = "wipe-in"> Education</h3>
+
+                <div class = "wipe-in" id = "NWMSU">
+                    <img src= "NWMSU_Thumbnail.png" class = "wipe-in">
+                    <p class = "wipe-in"> <i>Northwest Missouri State University</i></p>
+                    <ul>
+                        <li class = "wipe-in"> Master of Science <br> Geographic Information Science</li>
+                        <li class = "wipe-in"> May 2021 - December 2023</li>
+                    </ul>
+                </div>
+                
+                <div class = "wipe-in" id = "ClemsonUni">
+                    <img src= "Clemson_logo.png" class = "wipe-in">
+                    <p class = "wipe-in"><i> Clemson University</i></p>
+                    <ul>
+                        <li class = "wipe-in"> Master of Wildlife and Fisheries Resources</li>
+                        <li class = "wipe-in"> August 2020 - May 2023</li>
+                    </ul>
+                </div>
+                
+                
+                <div class = "wipe-in" id = "AngeloState">
+                    <img src= "ASU_logo.png" class = "wipe-in">
+                    <p class = "wipe-in"><i>Angelo State University</i></p>
+                    <ul>
+                        <li class = "wipe-in"> Bachelor of Science in <br>Natural Resource Management</li>
+                        <li class = "wipe-in"> Jan 2016 - May 2020</li>
+                        <li class = "wipe-in"> Magna Cum Laude</li>
+                        <li class = "wipe-in"> Outstanding Undergrad in <br> Range Management</li>
+                     </ul>
+                </div>
+            
+                           
+
+            </div>
+            
+            <div class="box" id="experience_box">
+                <h3 class = "wipe-in" > Experience </h3>
+                <div class="wipe-in" id="TFS">
+                    <h1 class="wipe-in">Geospatial Specialist </h1>
+                    <p class="wipe-in">Texas A&M Forest Service (July 2023 - Present)</p>
+                    <p class="wipe-in">College Station, Texas</p>
+                    <ul>
+                        <li class="wipe-in">Created high-quality, dynamic dashboards for internal and external audiences</li>
+                        <li class="wipe-in">Refined and automated methodologies for analysis in Urban Forestry using Python and ModelBuilder</li>
+                        <li class="wipe-in">Acquired and organized data into various spatial and non-spatial databases</li>
+                        <li class="wipe-in">Trained staff on the use of ESRI Suite products</li>
+                    </ul>
+                </div>
+                
+                <div class="wipe-in" id="NRCS">
+                    <h1 class="wipe-in">Rangeland Management Specialist</h1>
+                    <p class="wipe-in">Natural Resources Conservation Service - USDA (July 2020 - June 2022)</p>
+                    <p class="wipe-in">Ozona, Texas</p>
+                    <ul>
+                        <li class="wipe-in">Served as rangeland consultant to numerous ranchers in assigned area</li>
+                        <li class="wipe-in">Assembled and evaluated vegetation data relating to forage yields and composition changes</li>
+                        <li class="wipe-in">Provided landowners evaluations of their resources and designed conservation plans according to their goals</li>
+                        <li class="wipe-in">Collaborated with peers across the State to accomplish training requirements and career development</li>
+                    </ul>
+                </div>
+
+                <div class="wipe-in" id="Army">
+                    <h1 class="wipe-in">Geospatial Imagery Analyst</h1>
+                    <p class="wipe-in">Texas Army National Guard (December 2015 - December 2021)</p>
+                    <p class="wipe-in">Austin, Texas</p>
+                    <ul>
+                        <li class="wipe-in">Analyzed satellite and airborne imagery using intelligence gathering techniques</li>
+                        <li class="wipe-in">Produced high quality, accurate maps for key command decision makers </li>
+                        <li class="wipe-in">Identifed key mission targets and equipment using satellite and airborne imagery</li>
+                        <li class="wipe-in">Maintained a Top Secret security clearance for classified projects and operations</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- Updated HTML -->
+                <div class="box wipe-in" id="portfolio_box">
+                    <h3 class="wipe-in"> Portfolio </h3>
+                    <div class="image-container wipe-in">
+                        <div class="portfolio-item">
+                            <a href = "https://experience.arcgis.com/experience/2a763720f6de4aac9d8a4e4aa318b07a" target = "_blank">
+                                <img src="HTHL_ThumbNail.PNG" alt="Healthy Trees, Healthy Lives Dashboard" class="wipe-in double-border">
+                                <p class="wipe-in bold">Healthy Trees, Healthy Lives Dashboard</p>
+                                <p class="wipe-in">Dashboard that analyzes tree canopy around rights-of-way, school and medical facilites, and park/greenspace 
+                                    distance to residential areas. 
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Add more portfolio items as needed -->
+                        
+                        <div class="portfolio-item">
+                            <a href = "https://experience.arcgis.com/experience/e57b876c8cd542b6b35ca864dcaccaa6" target="_blank"> 
+                                <img src="Canopy_Distribution_Thumbnail.PNG" alt="Canopy Distribution Dashboard" class="wipe-in double-border">
+                                <p class="wipe-in bold">Canopy Distribution in the Rio Grande Valley, Texas</p>
+                                <p class="wipe-in">Dashboard that analyzes factors contributing to Urban Heat Island Effect in key communities in the Rio Grande Valley. </p>
+                            </a>
+                        </div>
+                                               
+                        <div class="portfolio-item">
+                            <a href = "https://experience.arcgis.com/experience/9adcf101e7044b56bca0e21368d7f4db" target = "_blank">
+                                <img src="ForestActionPlan_Thumbnail.PNG" alt="Forest Action Plan Dashboard" class="wipe-in double-border">
+                                <p class="wipe-in bold">Texas A&M Forest Service Forest Action Plan Data Explorer</p>
+                                <p class="wipe-in">The Forest Action Plan is an assessment of Texas' forest conditions and trends. This dashboard explores and details 
+                                    the data that went into building the assessment.  
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <a href = "https://storymaps.arcgis.com/collections/4f8ac291bf9c49fda1e126dd325321b1" target = "_blank">
+                                <img src="Census_Project_Thumbnail.PNG" alt="Census Analysis U.S. Forest Service Dashboard" class="wipe-in double-border">
+                                <p class="wipe-in bold">Census Analysis</p>
+                                <p class="wipe-in">Dashboard used by the U.S. Forest Service to plan tree plots based on census data.</p>
+                            </a>
+                        </div>
+
+                        <div class="portfolio-item" id = "MastersProject">
+                            <a href = "D:\Personal\CodingProjects\Portfolio\Main\Documents\Gorman_Final_Masters_Project.docx" 
+                            download = "Estimating Hurricane Damage with Google Earth Engine_JosephGorman.docx"
+                            target="_blank">
+                                <img src="FinalProject_NWMSU_Gorman.PNG" alt="Masters Project Document" class="wipe-in double-border">
+                                <p class="wipe-in bold">M.S. Final Project</p>
+                                <p class="wipe-in">A final project for M.S. in GIScience that examines that use and accuracy of estimating hurricane forest damage in 
+                                    two national forests in Texas.
+                                </p>
+                            </a>
+                        </div>
+                                        
+                    </div>
+                </div>
+
+                    
+                
+                </div>
+
+            </div>
+            </div>
+        </div>
+        
+     </div>
+     
+
+    </div>
+    </main>
+    <script src="box_toggle.js"></script>
+</body>
+</html>
