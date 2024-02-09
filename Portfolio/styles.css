@@ -1,0 +1,445 @@
+body {
+    font-family: 'PlayFair Display', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #000000;
+    background-image: url("contourimage_Background.jpg");
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    animation: starsMovement 50s linear infinite;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    display: none;
+    /* Add styling for the boxes as needed */
+}
+
+
+.wipe-in {
+    animation: wipeIn 1s ease-in-out;
+}
+
+@keyframes wipeIn{
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes starsMovement {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes twirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInDelay {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.container {
+    display: flex;
+    height: 95vh; /* Adjust the height as needed */
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: content-box;
+    margin-left: 20px;
+    overflow: auto;
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7); 
+}
+
+.left-container img {
+   max-width: 60%;
+   height: auto;
+}
+
+.image-border{
+    border: 0.2vw solid white;
+    max-width: 100%;
+    height: auto;
+}
+.left-container h2 {
+    padding-top: 0.5%;
+    font-size: 2vw;
+    display: flex;
+}
+
+.left-container p {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    font-size: 1vw;
+    scrollbar-width: thin;
+    flex: 2 2 8rem;    
+    text-wrap: wrap;   
+}
+
+@media only screen and (max-width: 720px) {
+    /* Adjust font sizes or other styles for smaller screens */
+    .left-container p2, 
+    .left-container p3 {
+        font-size: 0.5vw; /* Adjust as needed */
+    }
+}
+
+
+.social-menu {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon,
+.expanded-icons i {
+    font-size: 1.3vw;
+    color: #ffffff;
+}
+
+.expanded-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    z-index: 1;
+    opacity: 0;
+    left: 20px
+}
+
+.social-menu:hover .menu-icon {
+    animation: twirl 1s ease-in-out;
+}
+.social-menu:hover .expanded-icons {
+    animation: twirl 1s ease-in-out, fadeInDelay 1s ease-out forwards;
+    opacity: 1;
+    transform: scaleX(1) translateX(0);
+}
+
+.expanded-icons i {
+    margin: 0 10px;
+    animation: fadeInDelay 0.5s ease-out forwards;
+}
+
+.expanded-icons i:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.expanded-icons i:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding-right: 10%;
+    font-size: 1vw;
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+/* Add styles for underlined effect on hover */
+.nav-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1%;
+    background-color: #fff; /* Set the underline color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.8s ease-in-out; /* Add transition for width */
+}
+
+.nav-item.selected::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 1%;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.nav-item:hover::before {
+    width: 79%; /* Expand the width on hover */
+}
+
+
+.intel-Text {
+    text-decoration: underline;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #e9830e;
+}
+.skill-Text{
+    text-decoration: underline;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #9b49ca;
+}
+.right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7); 
+    min-width: 60%;
+    max-height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-sizing: content-box;
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+
+    flex: 1; /* Use flex to allow the container to grow and shrink */
+    max-width: 40%; /* Set a maximum width for the right container */
+    overflow: auto; /* Add this line to enable horizontal scrolling if needed */
+}
+/*------------------------------Education ---------------------------------------------*/
+/* For WebKit browsers (Chrome, Safari) */
+#education_box::-webkit-scrollbar {
+    width: 0px; /* Set the width of the scrollbar */
+}
+
+#education_box {
+    overflow: auto;
+    scrollbar-width: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-direction: row;
+}
+
+#education_box h3 {
+    text-align: center;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+#education_box p {
+    margin-top: -10%;
+    margin-right :5%;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+#education_box ul{
+    margin-top: -6%;
+    list-style: none;
+    font-size: 1.2vw;
+    text-align: right;
+    text-wrap: wrap;
+}
+
+
+
+#AngeloState img {
+    padding-top: 10%;
+    width: 25%;
+    height: auto;
+}
+
+#ClemsonUni img {
+    padding-top: 10%;
+    max-width: 25%;
+    height: auto;
+    
+}
+
+
+#NWMSU img {
+    max-width: 15%;
+    height: auto;    
+}
+
+
+.main-content{
+    
+    box-sizing: content-box;
+}
+.wrap-trigger {
+    word-wrap: break-word;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.left-container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+/*------------------------------Experience---------------------------------------------*/
+#experience_box {
+    scrollbar-width: none;
+    overflow: auto;
+    padding-left: 10%;
+    padding-right: 5%;
+    text-rendering: auto;
+}
+
+#experience_box h3 {
+    text-align: center;
+    font-size: 2vw;
+    text-decoration: underline;
+    padding-bottom: 0.2vw;
+}
+
+#experience_box h1{
+    margin-bottom: 0.01vw;
+    font-size: 1.2vw;
+}
+#experience_box p {
+    margin-bottom: 0.01vw;
+    font-size: 1vw;
+}
+
+#experience_box li {
+    font-size: 1vw;
+}
+
+
+#TFS {
+    display: flex;
+    flex-direction: flex;
+    padding-left: 2%;
+    flex-direction: column;
+}
+
+#TFS ul {
+    font-size: 0.8vw;
+    padding-left: 5%;
+    list-style-type: disc;
+}
+
+
+#NRCS {
+    display: flex;
+    flex-direction: flex;
+    padding-left: 2%;
+    flex-direction: column;
+}
+
+#NRCS ul {
+    font-size: 0.8vw;
+    padding-left: 5%;
+    list-style-type: disc;
+}
+
+#Army {
+    display: flex;
+    flex-direction: flex;
+    padding-left: 2%;
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+#Army ul {
+    font-size: 0.8vw;
+    padding-left: 5%;
+    list-style-type: disc;
+}
+
+
+/*------------------------------Portfolio---------------------------------------------*/
+
+#portfolio_box h3 {
+    text-decoration: underline;
+    font-size: 2vw;
+}
+#portfolio_box {
+    font-size: 1vw;
+}
+#portfolio_box {
+    flex-direction: column;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.image-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2%;
+    max-width: 100%; /* Adjust the max-width based on your design */
+    box-sizing: border-box;
+}
+
+.portfolio-item {
+    flex: 0 1 calc(30% - 1%);
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 100%; /* Ensure the items don't exceed the container width */
+    margin: 1%; /* Adjust margin as needed */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.double-border {
+    border: 0.1vw solid #000; /* Outer border */
+    outline: 0.1vw solid #fff; /* Inner border */
+    padding: 2%; /* Adjust padding as needed */
+    display: inline-block; /* Ensures inline elements have dimensions */
+  }
+  
+ .bold {
+    font-weight: bold;
+    text-decoration: underline;
+ }
+
+ .portfolio-item a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the default underline */
+}
+
+.portfolio-item a:hover {
+    font-style: italic; /* Add underline on hover if needed */
+}
+
+
