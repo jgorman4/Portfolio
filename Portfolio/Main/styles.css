@@ -5,7 +5,7 @@ body {
     padding: 0;
     position: relative;
     background-color: #000000;
-    background-image: url(https://github.com/jgorman4/Portfolio/blob/master/contourimage.jpg?raw=true);
+    background-image: url("Images/contourimage_Background.jpg");
     background-image: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -90,9 +90,7 @@ main {
     margin-left: 20px;
     overflow: auto;
     backdrop-filter: blur(3px);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-
-  
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7); 
 }
 
 .left-container img {
@@ -109,28 +107,16 @@ main {
     padding-top: 0.5%;
     font-size: 2vw;
     display: flex;
+}
 
-}
 .left-container p {
-    display: flex;
-}
-.left-container p2 {
-    position: relative;
-    font-size: 1vw;
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-}
-.left-container p3{
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
     font-size: 1vw;
     scrollbar-width: thin;
-    flex: 2 2 8rem;
-       
+    flex: 2 2 8rem;    
+    text-wrap: wrap;   
 }
 
 @media only screen and (max-width: 720px) {
@@ -258,105 +244,62 @@ main {
 /*------------------------------Education ---------------------------------------------*/
 /* For WebKit browsers (Chrome, Safari) */
 #education_box::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
+    width: 0px; /* Set the width of the scrollbar */
 }
+
 #education_box {
     overflow: auto;
     scrollbar-width: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-direction: row;
 }
 
 #education_box h3 {
     text-align: center;
-    margin-bottom: 50px;
     font-size: 2vw;
     text-decoration: underline;
-    flex-direction: column;
 }
 
-#AngeloState {
-    display: flex;
-    padding: 2%;
-}
-
-#AngeloStateTxt {
-    display: flex;
-    flex-direction: column;
+#education_box p {
+    margin-top: -10%;
+    margin-right :5%;
+    font-size: 1.2vw;
     text-align: center;
-    padding-left: 10%;
-    font-size: 1vw;
 }
+
+#education_box ul{
+    margin-top: -6%;
+    list-style: none;
+    font-size: 1.2vw;
+    text-align: right;
+    text-wrap: wrap;
+}
+
+
 
 #AngeloState img {
-   max-width: 25%;
-   height: auto;
-   padding-left: 10%;
-   
+    padding-top: 10%;
+    width: 25%;
+    height: auto;
 }
- #AngeloState p {
-    flex-direction: flex;
-    padding-left: 12%;
-    font-size: 1.4vw;
-    font-style: italic;
- }
-
-
- #ClemsonUni {
-    display: flex;
-    padding: 2%;
-}
-
 
 #ClemsonUni img {
+    padding-top: 10%;
     max-width: 25%;
     height: auto;
-    padding-left: 4%; /* Align the image to the left */
-}
- #ClemsonUni p {
-    flex-direction: flex;
-    padding-left: 12%;
-    font-size: 1.4vw;
-    font-style: italic;
- }
- #ClemsonUniTxt {
-    padding-top: 3%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: right;
-    padding-left: 10%;
-    font-size: 1vw;
- }
-
- #NWMSU {
-    display: flex;
-    padding: 2%
-}
-
-#NWMSU img {
-    width: 10%;
-    height: auto;
-    padding-left: 12%; /* Align the image to the left */
     
 }
 
- #NWMSU p {
-    flex-direction: flex;
-    padding-left: 15%;
-    font-size: 1.4vw;
-    font-style: italic;
- }
- #nwmsuTxt {
-    padding-top: 3%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: right;
-    padding-left: 10%;
-    font-size: 1vw;
- }
+
+#NWMSU img {
+    max-width: 15%;
+    height: auto;    
+}
+
 
 .main-content{
-    padding: 20px;
+    
     box-sizing: content-box;
 }
 .wrap-trigger {
@@ -377,10 +320,24 @@ main {
     text-rendering: auto;
 }
 
-#experience_box h4 {
+#experience_box h3 {
     text-align: center;
     font-size: 2vw;
     text-decoration: underline;
+    padding-bottom: 0.2vw;
+}
+
+#experience_box h1{
+    margin-bottom: 0.01vw;
+    font-size: 1.2vw;
+}
+#experience_box p {
+    margin-bottom: 0.01vw;
+    font-size: 1vw;
+}
+
+#experience_box li {
+    font-size: 1vw;
 }
 
 
@@ -391,29 +348,12 @@ main {
     flex-direction: column;
 }
 
-#TFS h1 {
-    font-size: 1.2vw;
-}
-
-#TFS p1{
-    font-size: 0.8vw;
-    padding-bottom: 1%;
-}
-#TFS p2 {
-    font-size: 0.8vw;
-    padding-bottom: 0.5%;
-}
-
 #TFS ul {
     font-size: 0.8vw;
     padding-left: 5%;
     list-style-type: disc;
 }
 
-#TFS li {
-    font-size: 0.8vw;
-    padding-bottom: 1%; /* Adjust spacing between list items */
-}
 
 #NRCS {
     display: flex;
@@ -422,29 +362,10 @@ main {
     flex-direction: column;
 }
 
-#NRCS h1 {
-    font-size: 1.2vw;
-}
-
-#NRCS p1 {
-    font-size: 0.8vw;
-    padding-bottom: 1%;
-}
-
-#NRCS p2 {
-    font-size: 0.8vw;
-    padding-bottom: 0.5%;
-}
-
 #NRCS ul {
     font-size: 0.8vw;
     padding-left: 5%;
     list-style-type: disc;
-}
-
-#NRCS li {
-    font-size: 0.8vw;
-    padding-bottom: 1%; /* Adjust spacing between list items */
 }
 
 #Army {
@@ -455,37 +376,22 @@ main {
     padding-bottom: 1%;
 }
 
-#Army h1 {
-    font-size: 1.2vw;
-}
-
-#Army p1 {
-    font-size: 0.8vw;
-    padding-bottom: 1%;
-}
-
-#Army p2 {
-    font-size: 0.8vw;
-    padding-bottom: 0.5%;
-}
-
 #Army ul {
     font-size: 0.8vw;
     padding-left: 5%;
     list-style-type: disc;
 }
 
-#Army li {
-    font-size: 0.8vw;
-    padding-bottom: 1%; /* Adjust spacing between list items */
-}
 
 /*------------------------------Portfolio---------------------------------------------*/
 
-#portfolio_box h1 {
+#portfolio_box h3 {
     text-decoration: underline;
+    font-size: 2vw;
 }
-
+#portfolio_box {
+    font-size: 1vw;
+}
 #portfolio_box {
     flex-direction: column;
     text-align: center;
@@ -513,8 +419,15 @@ main {
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-    border: 0.2vw solid white;
 }
+
+.double-border {
+    border: 0.1vw solid #000; /* Outer border */
+    outline: 0.1vw solid #fff; /* Inner border */
+    padding: 2%; /* Adjust padding as needed */
+    display: inline-block; /* Ensures inline elements have dimensions */
+  }
+  
  .bold {
     font-weight: bold;
     text-decoration: underline;
